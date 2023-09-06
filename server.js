@@ -26,14 +26,14 @@ app.all('/*', function(req, res, next) {
 const httpsServer = https.createServer(credentials, app);
 
 const connection = createConnection({
-    host: 'localhost',
+    host: 'mysql-container',
     user: 'root',
     password: '123',
     database: 'b2b'
 });
 
 const connection_pedido = createConnection({
-    host: 'localhost',
+    host: 'mysql-container',
     user: 'root',
     password: '123',
     database: 'pedido'
